@@ -32,15 +32,15 @@ jobs:
     container:
       image: ghcr.io/astral-sh/uv:python3.14-alpine
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
       - name: Read Python version from pyproject.toml
         id: python-version
         run: |
           echo "version=$(grep '^requires-python = ' pyproject.toml | cut -d'"' -f2)" >> $GITHUB_OUTPUT
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: ${{ steps.python-version.outputs.version }}
-      - uses: actions/cache@v4
+      - uses: actions/cache@v5
         with:
           path: /tmp/.uv-cache
           key: uv-${{ runner.os }}-${{ hashFiles('uv.lock') }}
@@ -68,7 +68,7 @@ jobs:
           check_name: Test Results
           comment_mode: always
       - name: Upload test results
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         if: always()
         with:
           name: test-results
