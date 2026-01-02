@@ -1,5 +1,5 @@
 version = 1
-revision = 3
+revision = 2
 requires-python = ">=3.12"
 
 [[package]]
@@ -466,7 +466,8 @@ wheels = [
 [[package]]
 name = "untokenize"
 version = "0.1.1"
-source = { git = "https://github.com/daeho-ro/untokenize.git#46cf0233fe18097398f5692f9caf3d2e5d94eb14" }
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/f7/46/e7cea8159199096e1df52da20a57a6665da80c37fb8aeb848a3e47442c32/untokenize-0.1.1.tar.gz", hash = "sha256:3865dbbbb8efb4bb5eaa72f1be7f3e0be00ea8b7f125c69cbd1f5fda926f37a2", size = 3099, upload-time = "2014-02-08T16:30:40.631Z" }
 
 [[package]]
 name = "uv-boilerplate"
@@ -484,7 +485,6 @@ dev = [
     { name = "pytest-cov" },
     { name = "python-json-logger" },
     { name = "ruff" },
-    { name = "untokenize" },
 ]
 
 [package.metadata]
@@ -500,7 +500,6 @@ dev = [
     { name = "pytest-cov", specifier = ">=6.1.1" },
     { name = "python-json-logger", specifier = ">=2.0.7" },
     { name = "ruff", specifier = ">=0.11.6" },
-    { name = "untokenize", git = "https://github.com/daeho-ro/untokenize.git" },
 ]
 
 [[package]]
