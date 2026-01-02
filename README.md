@@ -2,11 +2,11 @@
 
 [![Python Version](https://img.shields.io/badge/python-3.12-blue.svg)](https://www.python.org/downloads/)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
-[![UV](https://img.shields.io/badge/uv-0.1.0-orange.svg)](https://github.com/astral-sh/uv)
-[![Ruff](https://img.shields.io/badge/ruff-0.1.0-red.svg)](https://github.com/astral-sh/ruff)
+[![UV](https://img.shields.io/badge/uv-latest-orange.svg)](https://github.com/astral-sh/uv)
+[![Ruff](https://img.shields.io/badge/ruff-0.11.6-red.svg)](https://github.com/astral-sh/ruff)
 [![docformatter](https://img.shields.io/badge/docformatter-1.7.5-purple.svg)](https://github.com/PyCQA/docformatter)
 [![mypy](https://img.shields.io/badge/mypy-1.5.0-blue.svg)](http://mypy-lang.org/)
-[![pytest](https://img.shields.io/badge/pytest-7.4.0-green.svg)](https://docs.pytest.org/)
+[![pytest](https://img.shields.io/badge/pytest-8.3.5-green.svg)](https://docs.pytest.org/)
 
 > 🚀 The Python Project Boilerplate that will supercharge your development! Built with UV for blazing fast dependency management, static type checking, code formatting, logging and complete CI/CD workflows out of the box.
 
@@ -51,14 +51,14 @@ uv sync
 
 ```
 uv-boilerplate/
-├── .github/                               # 🔄 GitHub Actions workflows
-├── src/                                     # 📦 Your source code
+├── .github/                        # 🔄 GitHub Actions workflows
+├── src/                            # 📦 Your source code
 │   └── your_project/               # 🎯 Main package directory
-├── tests/                                   # 🧪 Test files
-├── .pre-commit-config.yaml   # 🔍 Pre-commit hooks
-├── pyproject.toml                    # ⚙️ Project configuration
-├── README.md                    # 📝 This file
-└── LICENSE                           # ⚖️ MIT License
+├── tests/                          # 🧪 Test files
+├── .pre-commit-config.yaml         # 🔍 Pre-commit hooks
+├── pyproject.toml                  # ⚙️ Project configuration
+├── README.md                       # 📝 This file
+└── LICENSE                         # ⚖️ MIT License
 ```
 
 ## 🛠️ Built-in Tools
@@ -122,6 +122,7 @@ If you find this boilerplate helpful, please:
 This project is maintained by:
 
 - [Jasmeet Gujral](https://github.com/JasGujral) - Creator and maintainer
+- [Jarosław Henner](https://github.com/jarovo) - Contributor
 
 ---
 

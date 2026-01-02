@@ -36,7 +36,7 @@ jobs:
       - name: Read Python version from pyproject.toml
         id: python-version
         run: |
-          echo "version=$(grep '^python = ' pyproject.toml | cut -d'"' -f2)" >> $GITHUB_OUTPUT
+          echo "version=$(grep '^requires-python = ' pyproject.toml | cut -d'"' -f2)" >> $GITHUB_OUTPUT
       - uses: actions/setup-python@v6
         with:
           python-version: ${{ steps.python-version.outputs.version }}
@@ -51,7 +51,7 @@ jobs:
       - name: Add git to enable installing https://github.com/myint/untokenize/pull/5 as a workaround for python3.14
         run: |
           apk add --no-cache git
-          
+
       - name: Install dependencies
         run: uv sync --all-extras --dev --frozen
       - name: Run tests
