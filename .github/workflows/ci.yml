@@ -37,7 +37,7 @@ jobs:
         id: python-version
         run: |
           echo "version=$(grep '^python = ' pyproject.toml | cut -d'"' -f2)" >> $GITHUB_OUTPUT
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: ${{ steps.python-version.outputs.version }}
       - uses: actions/cache@v5
