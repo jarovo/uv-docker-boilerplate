@@ -51,14 +51,14 @@ uv sync
 
 ```
 uv-boilerplate/
-├── .github/                               # 🔄 GitHub Actions workflows
-├── src/                                     # 📦 Your source code
+├── .github/                        # 🔄 GitHub Actions workflows
+├── src/                            # 📦 Your source code
 │   └── your_project/               # 🎯 Main package directory
-├── tests/                                   # 🧪 Test files
-├── .pre-commit-config.yaml   # 🔍 Pre-commit hooks
-├── pyproject.toml                    # ⚙️ Project configuration
-├── README.md                    # 📝 This file
-└── LICENSE                           # ⚖️ MIT License
+├── tests/                          # 🧪 Test files
+├── .pre-commit-config.yaml         # 🔍 Pre-commit hooks
+├── pyproject.toml                  # ⚙️ Project configuration
+├── README.md                       # 📝 This file
+└── LICENSE                         # ⚖️ MIT License
 ```
 
 ## 🛠️ Built-in Tools
@@ -122,6 +122,7 @@ If you find this boilerplate helpful, please:
 This project is maintained by:
 
 - [Jasmeet Gujral](https://github.com/JasGujral) - Creator and maintainer
+- [Jarosław Henner](https://github.com/jarovo) - Contributor
 
 ---
 
