@@ -32,7 +32,7 @@ jobs:
     container:
       image: ghcr.io/astral-sh/uv:python3.14-alpine
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
       - name: Read Python version from pyproject.toml
         id: python-version
         run: |
