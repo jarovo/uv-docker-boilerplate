@@ -5,9 +5,6 @@ on:
     branches:
       - "**"
 
-env:
-  UV_VERSION: "0.6.5"
-
 concurrency:
   group: ${{ github.workflow }}-${{ github.head_ref || github.run_id }}
   cancel-in-progress: true
@@ -16,7 +13,9 @@ jobs:
   build:
     env:
       UV_CACHE_DIR: /tmp/.uv-cache
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/astral-sh/uv:python3.14-alpine
     steps:
       - name: Checkout source code
         uses: actions/checkout@v4
@@ -29,8 +28,6 @@ jobs:
         id: python-version
         run: |
           echo "version=$(grep '^python = ' pyproject.toml | cut -d'"' -f2)" >> $GITHUB_OUTPUT
-      - name: Set up uv
-        run: curl -LsSf https://astral.sh/uv/${{ env.UV_VERSION }}/install.sh | sh
       - name: Restore uv cache
         uses: actions/cache@v4
         with:
