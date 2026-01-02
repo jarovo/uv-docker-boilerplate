@@ -7,6 +7,7 @@ requires-python = ">=3.12"
 license = { file = "LICENSE" }
 authors = [
   { name = "Jasmeet Gujral", email = "gujralsam@gmail.com" },
+  { name = "Jaroslav Henner", email = "jaroslav.henner@gmail.com" },
 ]
 
 homepage = "https://github.com/JasGujral/uv-boilerplate#readme"
@@ -23,6 +24,7 @@ dev = [
     "pytest-cov>=6.1.1",
     "ruff>=0.11.6",
     "python-json-logger>=2.0.7",
+    "untokenize",
 ]
 
 [build-system]
@@ -50,3 +52,6 @@ src = ["src", "tests"]
 
 [tool.ruff.lint.per-file-ignores]
 "tests/*.py" = ["S101"]
+
+[tool.uv.sources]
+untokenize = { git = "https://github.com/daeho-ro/untokenize.git" }
